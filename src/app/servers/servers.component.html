@@ -16,6 +16,9 @@
     </div>
     <div class="row">
         <p *ngIf="allowClick">Server was created </p>
+        @if (allowClick) {
+            <p *ngIf="allowClick">Server was created 2</p>
+        }
     </div>
 </div>
 <br />
