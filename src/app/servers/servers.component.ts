@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './servers.component.css'
 })
 export class ServersComponent implements OnInit {
+updateText(event: any) {
+  this.clicked = (<HTMLInputElement>event.target).value;
+}
 
   allowClick = false;
   clicked: string = "Not clicked";
