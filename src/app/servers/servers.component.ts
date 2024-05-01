@@ -10,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class ServersComponent implements OnInit {
 
   allowClick = false;
+  clicked: string = "Not clicked";
 
   ngOnInit(): void {
 
@@ -20,5 +21,12 @@ export class ServersComponent implements OnInit {
       this.allowClick = true;
     }, 2000);
   }
+
+onClicked(event){
+  this.clicked = "Clicked!!";  
+  const button = event.target;
+  console.log(button);
+  console.dir(button);
+}
 
 }

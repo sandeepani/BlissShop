@@ -1,4 +1,14 @@
-<button class="btn btn-primary"  [disabled]="!allowClick" >Click</button>
-<br/>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-2">
+            <button class="btn btn-primary" [disabled]="!allowClick"
+                (click)="onClicked($event)">Click</button>
+        </div>
+        <div class="col-xs-10">
+            <p>{{clicked}}</p>
+        </div>
+    </div>
+</div>
+<br />
 <app-server></app-server>
 <app-server></app-server>
